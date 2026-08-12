@@ -1,0 +1,11 @@
+{
+  "name": "dev-detective",
+  "version": "1.0.0",
+  "description": "Client-side GitHub profile search demo",
+  "scripts": {
+    "test": "node tests/test-formatDate.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
