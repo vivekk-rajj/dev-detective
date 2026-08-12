@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dev-Detective — GitHub Profile Search</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Dev-Detective</h1>
+
+    <section class="controls">
+      <form id="searchForm" class="search-form">
+        <input id="usernameInput" type="search" placeholder="Enter GitHub username (e.g. octocat)" required />
+        <button type="submit">Search</button>
+        <button id="toggleBattle" type="button">Toggle Battle Mode</button>
+      </form>
+
+      <form id="battleForm" class="battle-form hidden">
+        <input id="userA" type="search" placeholder="User A" required />
+        <input id="userB" type="search" placeholder="User B" required />
+        <button type="submit">Battle!</button>
+      </form>
+    </section>
+
+    <section id="status" class="status" aria-live="polite"></section>
+
+    <section id="result" class="result"></section>
+  </main>
+
+  <script src="utils.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
