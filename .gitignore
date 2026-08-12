@@ -1,0 +1,14 @@
+# Ignore local and OS files
+.DS_Store
+node_modules/
+.env
+
+# IDE
+.vscode/
+
+# Build outputs
+dist/
+
+# Tokens (do not commit)
+*.pem
+*.key
